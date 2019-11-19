@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Rsa_Attack_CipherText",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Rsa_Attack_CipherText",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Fast_Exponentiation",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Fast_Exponentiation",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ejemplo",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.ejemplo",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Private_Key",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Private_Key",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Is_Prime",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Is_Prime",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_RSA",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_RSA",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Euclides_Extended",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Euclides_Extended",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Euclides",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Euclides",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Cipher_Substitution",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Cipher_Substitution",
+            "projectName": "algorithm"
+        }
+    ]
+}
