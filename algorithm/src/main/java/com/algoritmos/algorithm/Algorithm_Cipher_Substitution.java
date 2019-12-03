@@ -132,5 +132,7 @@ public class Algorithm_Cipher_Substitution {
 			System.out.println("How many changes want to do?");
 			numLetters = Integer.parseInt(scan.nextLine());
 		} while (numLetters != 0);
+		scan.close();
 	}
+
 }

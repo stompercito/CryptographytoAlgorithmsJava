@@ -4,6 +4,7 @@ import java.math.BigInteger;
 class Algorithm_Fast_Exponentiation {
 
     public BigInteger fastExp(BigInteger a, BigInteger n, BigInteger z) {
+        //a^n mod z
 
         BigInteger resultado = BigInteger.ONE;
         BigInteger DOS = new BigInteger("2");

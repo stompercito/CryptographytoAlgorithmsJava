@@ -16,16 +16,16 @@ public class Algorithm_RSA {
         //Cripto sistema
         BigInteger M = new BigInteger("2"); //Mensaje
 
-        BigInteger prime1 = new BigInteger("31"); //p
-        BigInteger prime2 = new BigInteger("17"); //q
+        BigInteger prime1 = new BigInteger("17"); //p
+        BigInteger prime2 = new BigInteger("31"); //q
 
         BigInteger n = prime1.multiply(prime2); //n
 
         BigInteger e = new BigInteger("7"); //e
         
         //Comprobar e
-        prime1.subtract(new BigInteger("1")); 
-        prime2.subtract(new BigInteger("1"));
+        prime1 = prime1.subtract(new BigInteger("1")); 
+        prime2 = prime2.subtract(new BigInteger("1"));
         BigInteger phiN = prime1.multiply(prime2); 
         System.out.println("e = " + e);
         System.out.println("Comprobación: e = " + gcdA.gcd(e.intValue(),phiN.intValue()));
@@ -38,6 +38,9 @@ public class Algorithm_RSA {
         
         //Calcular d
         BigInteger d = gcdE.euclidesEx(e, phiN);
+        if(d.compareTo(BigInteger.valueOf(0)) < 0 ){
+            d = d.mod(phiN);
+        }
         //comprobar d
         BigInteger temp = e.multiply(d); 
         System.out.println("d = " + d);

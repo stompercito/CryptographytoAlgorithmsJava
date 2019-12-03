@@ -1,14 +1,16 @@
 package com.algoritmos.algorithm;
-  
-class Algorithm_Euclides { 
+
+import java.math.BigInteger;
+
+class Algorithm_Euclides {
   
     // Function to return GCD of a and b 
-    public int gcd(int a, int b) 
-    { 
-        if (a == 0) 
-            return b; 
-        return gcd(b % a, a); 
-    } 
+    public int gcd(int a, int b) {
+        BigInteger b1 = BigInteger.valueOf(a);
+        BigInteger b2 = BigInteger.valueOf(b);
+        BigInteger gcd = b1.gcd(b2);
+        return gcd.intValue();
+    }
   
     //Euler Totient Function 
     public int phi(int n) 

@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_DiffieHellman",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_DiffieHellman",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Curvas_Elipticas",
+            "request": "launch",
+            "mainClass": "Algorithm_Curvas_Elipticas",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Curvas_Elipticas",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Curvas_Elipticas",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithms_RSA_DHKE",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithms_RSA_DHKE",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Algorithm_Rsa_Attack_CipherText",
             "request": "launch",
             "mainClass": "com.algoritmos.algorithm.Algorithm_Rsa_Attack_CipherText",
