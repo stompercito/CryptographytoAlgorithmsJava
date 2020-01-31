@@ -5,6 +5,29 @@ import java.math.BigInteger;
 //import java.util.List;
 
 public class Algorithm_RSA {
+    Algorithm_Phi_Euler phiT = new Algorithm_Phi_Euler();
+
+    public BigInteger llave_privada_ne(BigInteger n, BigInteger e) {
+
+        BigInteger d = e.modInverse(phiT.phiEulerEficient(n));
+        if (d.compareTo(BigInteger.valueOf(0)) < 0) {
+            BigInteger phi = phiT.phiEulerEficient(n);
+            d = d.mod(phi);
+            return d;
+        }
+
+        return d;
+
+    }
+
+    public BigInteger desencryptar_mensaje_rsa(BigInteger n, BigInteger e, BigInteger y) {
+
+        BigInteger d = llave_privada_ne(n, e);
+        // Realizamos la encriptación
+        BigInteger x = y.modPow(d, n);
+
+        return x;
+    }
 
     public static void main(String[] args) {
 
@@ -14,14 +37,15 @@ public class Algorithm_RSA {
         Algorithm_Euclides_Extended gcdE = new Algorithm_Euclides_Extended();
         Algorithm_Fast_Exponentiation fE2 = new Algorithm_Fast_Exponentiation();
         //Cripto sistema
-        BigInteger M = new BigInteger("2"); //Mensaje
+        BigInteger M = new BigInteger("2115163475"); //Mensaje
 
-        BigInteger prime1 = new BigInteger("17"); //p
-        BigInteger prime2 = new BigInteger("31"); //q
+        BigInteger prime1 = new BigInteger("65809"); //p
+        BigInteger prime2 = new BigInteger("65827"); //q
 
-        BigInteger n = prime1.multiply(prime2); //n
+        //BigInteger n = prime1.multiply(prime2); //n
+        BigInteger n = new BigInteger("4348083479"); //n
 
-        BigInteger e = new BigInteger("7"); //e
+        BigInteger e = new BigInteger("199"); //e
         
         //Comprobar e
         prime1 = prime1.subtract(new BigInteger("1")); 
@@ -48,7 +72,7 @@ public class Algorithm_RSA {
         System.out.println("Comprobación: d" + " = " + mod);
         
         //Decifrado
-        x = fE2.fastExp(y, d, n);
+        x = fE2.fastExp(M, d, n);
         System.out.println("El mensaje decifrado es = " + x);
 
         

@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Algorithms_Exam",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithms_Exam",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Algorithm_Cipher_Cesar",
+            "request": "launch",
+            "mainClass": "com.algoritmos.algorithm.Algorithm_Cipher_Cesar",
+            "projectName": "algorithm"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Algorithm_DiffieHellman",
             "request": "launch",
             "mainClass": "com.algoritmos.algorithm.Algorithm_DiffieHellman",

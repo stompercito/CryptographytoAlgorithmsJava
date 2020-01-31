@@ -1,13 +1,10 @@
 package com.algoritmos.algorithm;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class Algorithm_Cipher_Cesar {
-	public static void main(String[] args) {
+	public void cesar(String str){
 		String result;
 		int index = 0;
-		String in = "MHQOQEQEXMSQZFQPQXMCGQZMPUQQEBQDMZMPMXMCGQTMOQOAEMECGQZMPUQBGQPQUYMSUZMD";
+		String in = str;
 		//String[] ABC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S",
 				//"T", "U", "V", "W", "X", "Y", "Z" };
 		String ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";	
@@ -37,6 +34,15 @@ public class Algorithm_Cipher_Cesar {
 			System.out.println("[" + n % 26 + "] " + result);
 		}
 
+	}
+	
+	public static void main(String[] args) {
+
+		String in = "VCTFU ZXFJV TIVKF UVVJK VVORD VEVJR OIPYE";
+		
+		Algorithm_Cipher_Cesar c = new Algorithm_Cipher_Cesar();
+
+		c.cesar(in);
 	}
 
 }

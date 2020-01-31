@@ -7,14 +7,14 @@ import java.util.List;
 
 //Fórmula del negativo = (x, prime - y mod prime)
 public class Algorithm_Curvas_Elipticas {
-	private static BigInteger p = new BigInteger("11");
-	private static BigInteger a = new BigInteger("1");
+	private static BigInteger p = new BigInteger("1201");
+	private static BigInteger a = new BigInteger("19");
 
 	public static void main(String[] args) {
 //		BigInteger x;
 //		BigInteger y;
 
-		BigInteger b = new BigInteger("6");
+		BigInteger b = new BigInteger("17");
 
 		
 		//Example		
@@ -135,6 +135,7 @@ public class Algorithm_Curvas_Elipticas {
 			
 			
 		}
+		System.out.println("Cantidad de puntos: " + sizeP);
 
 		
 	}

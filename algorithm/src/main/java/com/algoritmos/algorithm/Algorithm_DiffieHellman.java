@@ -5,15 +5,30 @@ import java.math.BigInteger;
 public class Algorithm_DiffieHellman {
 
 	public static void main(String[] args) {
+		Algorithm_Fast_Exponentiation fE3 = new Algorithm_Fast_Exponentiation();
 		//Encryption
-		BigInteger p = new BigInteger ("3989");
+		BigInteger p = new BigInteger ("3389");
 		BigInteger alpha = new BigInteger ("10");
-		BigInteger a = new BigInteger ("4");
-		BigInteger b = new BigInteger ("3");
-		BigInteger x = alpha.pow(a.intValue()).mod(p);
-		BigInteger y = alpha.pow(b.intValue()).mod(p);
 		BigInteger A = new BigInteger("3382");
 		BigInteger B = new BigInteger("2589");
+		BigInteger i = new BigInteger ("1");
+		BigInteger i2 = new BigInteger ("1");
+		BigInteger a = new BigInteger ("0");
+		BigInteger b = new BigInteger ("0");
+
+		while(fE3.fastExp(alpha, i, p).equals(A)){
+			a = i;
+			i.add(BigInteger.ONE);
+		}
+
+		while(fE3.fastExp(alpha, i2, p).equals(B)){
+			b = i;
+			i.add(BigInteger.ONE);
+		}
+
+		BigInteger x = alpha.pow(a.intValue()).mod(p);
+		BigInteger y = alpha.pow(b.intValue()).mod(p);
+		
 		
 		System.out.println("x : " + x);
 		System.out.println("y : " + y);
